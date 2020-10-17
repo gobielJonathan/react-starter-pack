@@ -1,0 +1,125 @@
+$right-base-color: #ffab91;
+$left-base-color: #ffccbc;
+$link-color: #e53935;
+
+.login-wrapper{
+    width: 70%;
+    height: 80%;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    top: 0;
+    overflow-x: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+  
+.left {
+    left: 0;
+    background-color: $left-base-color;
+    border-radius: 10px 0 0 10px;
+    &:hover{
+		z-index: 2;
+		box-shadow: 0px 0px 0px rgb(236, 233, 233);
+		transform: scale(1.02);
+        border-radius: 10px 10px 10px 10px;
+    }
+}
+
+.right {
+    right: 0;
+    background-color: $right-base-color;
+    border-radius: 0 10px 10px 0;
+    flex-direction: column;
+    &:hover{
+		z-index: 2;
+		box-shadow: 2px 2px 2px rgb(236, 233, 233);
+		transform: scale(1.02);
+        border-radius: 10px 10px 10px 10px;
+    }
+}
+
+img{
+    width: 40%;
+    border-radius: 100px;
+    vertical-align: middle;
+}
+
+.inner-left{
+    text-align: center;
+}
+
+.inner-right{
+    text-align: center;
+    height: auto;
+}
+
+h2{
+    color: white;
+}
+
+.login-btn{
+    border-radius: 25px;
+    width: 22vw;
+    height: 6.5vh;
+    padding: 7px 15px;
+    background-color:white;
+    color: $right-base-color;
+    font-weight: bold;
+    border: 0px solid transparent;
+    outline: none;
+    transition: 0.2s background-color;
+    &:hover{
+        background-color:#ff8a65;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s background-color;
+    }
+}
+
+.field{
+    border-radius: 25px;
+    width: 22vw;
+    height: 4vh;
+    margin-bottom: 1vh;
+    padding: 7px 0px;
+    background-color: white;
+}
+
+.field>input{
+    margin-left: 0.5vw;
+    border: none;
+    padding: 0px 15px;
+    outline: none;
+}
+
+a{
+    color: $link-color;
+    &:hover {
+        color: white;
+        transition: 0.2s background-color;
+    }
+}
+
+.register-field{
+    position: absolute; 
+    bottom: 3.5vh;
+}
+
+.register-field>a{
+    text-decoration: none;
+    margin-right: 1vw;
+}
+
+.register-link>label{
+    margin-right: 0.5vw;
+}
