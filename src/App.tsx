@@ -2,14 +2,14 @@ import React, { useContext } from 'react';
 import './App.css';
 import { AuthContext } from './provider'
 import Footer from './components/footer/footer.component'
-import Login from './components/login/login.component'
+import Auth from './containers/auth.component'
 
 function App() {
   const { login, auth } = useContext(AuthContext)
 
   return (
     <>
-      <Login/>
+      <Auth/>
       <Footer/>
     </>
   );
