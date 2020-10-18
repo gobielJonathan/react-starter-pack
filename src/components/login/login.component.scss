@@ -22,17 +22,22 @@ $link-color: #e53935;
     display: flex;
     justify-content: center;
 }
-  
+
+.zoom {
+    z-index: 2;
+    transform: scale(1.02);
+    border-radius: 10px;
+}
+
 .left {
     left: 0;
     background-color: $left-base-color;
     border-radius: 10px 0 0 10px;
     &:hover{
-		z-index: 2;
+        @extend .zoom;
 		box-shadow: 0px 0px 0px rgb(236, 233, 233);
-		transform: scale(1.02);
-        border-radius: 10px 10px 10px 10px;
     }
+    transition: transform 0.2s;
 }
 
 .right {
@@ -41,11 +46,10 @@ $link-color: #e53935;
     border-radius: 0 10px 10px 0;
     flex-direction: column;
     &:hover{
-		z-index: 2;
+        @extend .zoom;
 		box-shadow: 2px 2px 2px rgb(236, 233, 233);
-		transform: scale(1.02);
-        border-radius: 10px 10px 10px 10px;
     }
+    transition: transform 0.2s;
 }
 
 img{
@@ -111,7 +115,7 @@ a{
 }
 
 .register-field{
-    position: absolute; 
+    position: absolute;
     bottom: 3.5vh;
 }
 
