@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-interface IProps{} 
+interface IProps{}
 
 const LoginButton : React.FC<IProps> = props => {
     return (
-        <p><button className="login-btn">Log In</button></p>
+        <p><button className="login-btn">Register</button></p>
     )
 }
 
